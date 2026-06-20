@@ -36,7 +36,7 @@ function getTgUser() {
 }
 
 async function sendMsg(chat_id, text) {
-  if (!BOT_TOKEN || BOT_TOKEN === "ВСТАВ_ТОКЕН_БОТА_ТУТ") return true;
+  if (!BOT_TOKEN || BOT_TOKEN === "8797577683:AAEuiN1_1lCiBC-prKuCZlao_n1I_tTEMsI") return true;
   try {
     await fetch(`https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`, {
       method: "POST",
@@ -62,7 +62,7 @@ async function sendToAdmin(text) {
 }
 
 async function sendPhotoToAdmin(base64, caption) {
-  if (!BOT_TOKEN || BOT_TOKEN === "ВСТАВ_ТОКЕН_БОТА_ТУТ") return true;
+  if (!BOT_TOKEN || BOT_TOKEN === "8797577683:AAEuiN1_1lCiBC-prKuCZlao_n1I_tTEMsI") return true;
   try {
     const res = await fetch(base64);
     const blob = await res.blob();
